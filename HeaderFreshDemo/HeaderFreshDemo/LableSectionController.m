@@ -30,7 +30,7 @@
 
 - (CGSize)sectionController:(IGListBindingSectionController *)sectionController sizeForViewModel:(id)viewModel atIndex:(NSInteger)index{
     CGFloat width = self.collectionContext.containerSize.width;
-    return CGSizeMake(width, 100);
+    return CGSizeMake(width, 200);
 }
 
 - (UICollectionViewCell<IGListBindable> *)sectionController:(IGListBindingSectionController *)sectionController cellForViewModel:(id)viewModel atIndex:(NSInteger)index{

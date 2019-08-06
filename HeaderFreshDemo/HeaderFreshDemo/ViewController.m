@@ -12,7 +12,7 @@
 #import "LableSectionController.h"
 #import <MJRefresh.h>
 
-static NSInteger const kPerCount = 10;
+static NSInteger const kPerCount = 4;
 
 @interface ViewController ()<IGListAdapterDataSource>
 
@@ -69,6 +69,7 @@ static NSInteger const kPerCount = 10;
         });
     }];
     footer.refreshingTitleHidden = YES;
+    footer.stateLabel.hidden = YES;
     
     self.collectionView.mj_footer = footer;
 }
